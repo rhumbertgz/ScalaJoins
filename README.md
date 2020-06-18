@@ -1,12 +1,12 @@
 ## NOTE:
 This fork encapsulates the original ScalaJoins code as an SBT project to add this library as a dependency on other projects.
 
-### ScalaJoins as a project dependency 
+Add the below two definitions to the *build.sbt* file of your project to use the ScalaJoins abstractions in your code.
 
     lazy val root = Project("root", file(".")) dependsOn(scalaJoinsLib)
     lazy val scalaJoinsLib = RootProject(uri("git://github.com/rhumbertgz/ScalaJoins.git"))
 
-Add the above two definitions to the build.sbt of your project to use the use the ScalaJoins abstractions in your code.
+
 
 # Scala Joins
 
