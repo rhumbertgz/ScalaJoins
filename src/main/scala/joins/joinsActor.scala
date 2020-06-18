@@ -91,7 +91,7 @@ object joinsActor extends App {
           //println("buffer non-empty: "+buf.head)
           Some(buf.head._1)
         }
-        else if (!dry && joins.matches(tag)) {
+        else if (!dry && joins.matches(tag) && !buf.isEmpty ) {
           val arg = buf.head._1
 	  // keep a reference to the reply destination such that it is still
      	  // accessible when performing a reply in the join pattern body
