@@ -93,9 +93,9 @@ object joinsActor extends App {
         }
         else if (!dry && joins.matches(tag) && !buf.isEmpty ) {
           val arg = buf.head._1
-	  // keep a reference to the reply destination such that it is still
-     	  // accessible when performing a reply in the join pattern body
-	  replyDest = buf.head._2
+	        // keep a reference to the reply destination such that it is still
+     	    // accessible when performing a reply in the join pattern body
+	        replyDest = buf.head._2
           buf = buf.tail
           Some(arg)
         } else None
